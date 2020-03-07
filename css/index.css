@@ -1,3 +1,11 @@
+.navigation-style {
+  display: flex;
+  justify-content: center;
+}
+.main-style {
+  display: block;
+  text-align: center;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -166,7 +174,33 @@ p {
 }
 .main-header h1 {
   font-size: 50px;
-  margin: 0.5em;
+  margin: 0.2em;
+}
+@media (max-width: 500px ) {
+  .main-header h1 {
+    font-size: 40px;
+  }
+}
+.navigation {
+  display: flex;
+  justify-content: center;
+}
+.navigation a {
+  font-size: 25px;
+  padding: 25px;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #23293B;
+}
+@media (max-width: 500px ) {
+  .navigation a {
+    font-size: 12px;
+  }
+}
+@media (max-width: 500px ) {
+  .big {
+    max-width: 100%;
+  }
 }
 footer {
   color: #22283B;
@@ -228,4 +262,62 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.btn .button {
+  padding: 10px 40px;
+  border-radius: 10px;
+  background-color: #23293B;
+  padding: 10px 20px;
+  font-size: 15px;
+  margin-left: 5px;
+  margin-Right: 5px;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+}
+.btn .button:hover {
+  background-color: #01004a;
+}
+@media (max-width: 500px ) {
+  .sky {
+    display: none;
+  }
+}
+@media (max-width: 500px ) {
+  .launch {
+    display: none;
+  }
+}
+@media (max-width: 500px ) {
+  .blast {
+    display: block;
+    justify-content: center;
+    margin-left: 5em;
+  }
+}
+@media (max-width: 500px ) {
+  .walk {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 500px ) {
+  .walk-text p {
+    width: 100%;
+    margin-left: 5em;
+  }
+}
+@media (max-width: 500px ) {
+  .walk-text h3 {
+    margin-left: 3em;
+  }
+}
+@media (max-width: 500px ) {
+  .button {
+    display: block;
+    width: 100%;
+    padding-right: 50px;
+  }
 }

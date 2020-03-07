@@ -1,13 +1,43 @@
 // Navigation code here
 
 .main-header {
+.main-style();  // mix-in applied 
 
-display: block;
-text-align: center;
 h1 {
 font-size: 50px;
-margin: .5em;
+margin: .2em;
+@media @phone {
+font-size:40px;
 
 }
+}
+
+}
+.navigation {
+
+.navigation-style();  // mix-in applied 
+@media @phone{
+
+
+}
+a {
+    font-size: 25px;
+    padding: 25px;
+    text-transform: capitalize;
+    text-decoration: none;
+color: @header-font-color;   // variable applied 
+@media @phone{
+font-size:12px;
+
+}
+}
+
+}
+.big {
+
+    @media @phone{
+    max-width: 100%;
+
+    }
 
 }

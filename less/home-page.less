@@ -57,8 +57,7 @@
         margin-bottom: 26px;
       }
 
-      .btn {
-      }
+      
     }
 
     .walk-img {
@@ -73,4 +72,75 @@
     }
   }
 }// home
+.btn {
+.button{
+  padding: 10px 40px;
+  border-radius: 10px;
+  background-color: @header-font-color;
+  .button-style(); // parametric mixin 
+  color: white;
+  cursor: pointer;
+   .center(); // parametric mixin 
+  &:hover {
+	// The compiled color returned is #006667 
+    background-color: darken(rgb(2, 0, 99), 5%)
+  }
 
+}
+}
+.sky {
+  @media @phone{
+   display: none;
+
+  }
+
+  }
+.launch {
+  @media @phone{
+   display: none;
+
+  }
+}
+.blast {
+  @media @phone{
+  display: block;
+  justify-content: center;
+  margin-left: 5em;
+
+  }
+
+
+}
+.walk {
+  @media @phone{
+display: flex;
+flex-direction: column-reverse;
+
+
+  }
+}
+.walk-text p {
+
+  @media @phone{
+  width: 100%;
+   margin-left: 5em;
+  }
+
+
+}
+.walk-text h3 {
+  @media @phone{
+   margin-left: 3em;
+ 
+  }
+
+}
+.button {
+  @media @phone{
+  display: block;
+  width: 100%;
+  padding-right: 50px;
+  }
+
+
+}
