@@ -1,15 +1,24 @@
 // General Styles
 * {
   box-sizing: border-box;
+
 }
 
 html {
   font-size: 62.5%;
+  @media @phone {
+ width: 100%;
+
+  }
 }
 
 html, body {
   font-family: 'Ubuntu', sans-serif;
   color: @main-font-color;
+  @media @phone {
+  width: 100%;
+
+  }
 }
 
 h1, h2, h3, h4, h5 {
@@ -34,5 +43,9 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;  
+  @media @phone {
+  width: 100%;
+
+  }
 }
 

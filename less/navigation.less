@@ -16,18 +16,15 @@ font-size:40px;
 .navigation {
 
 .navigation-style();  // mix-in applied 
-@media @phone{
 
-
-}
 a {
     font-size: 25px;
-    padding: 25px;
+    padding: 20px;
     text-transform: capitalize;
     text-decoration: none;
 color: @header-font-color;   // variable applied 
-@media @phone{
-font-size:12px;
+@media (max-width:500px){
+font-size:1.5rem;
 
 }
 }
@@ -39,5 +36,16 @@ font-size:12px;
     max-width: 100%;
 
     }
+
+}
+
+.color {
+@media @phone{
+background-color: rgb(204, 200, 200);
+
+
+}
+
+
 
 }
